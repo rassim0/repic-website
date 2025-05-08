@@ -1,0 +1,276 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e6f0fa 0%, #f4f4f9 100%);
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #137345;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.post-form h2 {
+    font-size: 1.5em;
+    color: #1c1e21;
+    margin: 0 0 10px;
+}
+
+.post-form textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.post-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.post-form button {
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.post-form button:hover {
+    background: #165db7;
+}
+
+.post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.post-meta h3 {
+    font-size: 1.1em;
+    color: #1c1e21;
+    margin: 0;
+}
+
+.post-meta span {
+    font-size: 0.9em;
+    color: #65676b;
+}
+
+.globe-icon::before {
+    content: '🌐';
+    margin-left: 5px;
+}
+
+.post-content p {
+    font-size: 1em;
+    color: #1c1e21;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: cover;
+    flex: 0 0 100%;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e4e6eb;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #65676b;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post-actions button:hover {
+    background: #f0f2f5;
+    border-radius: 5px;
+}
+
+.like-icon::before {
+    content: '👍';
+    margin-right: 5px;
+}
+
+.comment-icon::before {
+    content: '💬';
+    margin-right: 5px;
+}
+
+.share-icon::before {
+    content: '➦';
+    margin-right: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background: #137345;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+.sidebar.hidden {
+    left: -100px;
+}
+
+.nav-link {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link:hover {
+    background: #e4b509;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #137345;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+    font-family: 'DM Mono', monospace;
+}
+
+.toggle-btn:hover {
+    background: #e4b509;
+}
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        top: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 0;
+    }
+
+    .sidebar.hidden {
+        bottom: -60px;
+        left: 0;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .toggle-btn {
+        top: 10px;
+        left: 10px;
+    }
+}

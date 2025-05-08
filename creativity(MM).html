@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativity Department</title>
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+    <nav class="sidebar">
+        <a href="chat2.0.html" class="nav-link">Chat</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="media(MM).html" class="nav-link">Media</a>
+        <a href="projects(MM).html" class="nav-link">Projects</a>
+        <a href="creativity(MM).html" class="nav-link">Creativity</a>
+        <a href="logout.html" class="nav-link">Logout</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="content-container">
+            <h1>CREATUVITY DEPARTMENT</h1>
+            <div class="post-form">
+                <h2>Share your creation</h2>
+                <form id="postForm" enctype="multipart/form-data">
+                    <input type="text" name="memberName" placeholder="Your name" required>
+                    <textarea name="content" placeholder="Describe your creative project or idea!" required></textarea><br>
+                    <br>
+                    <input type="file" name="images" accept="image/*" multiple>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+            <div id="posts">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="profile-pic" style="background-image: url('03.png');"></div>
+                        <div class="post-meta">
+                            <h3>mohamed all</h3>
+                            <span>April 12 2025 <i class="globe-icon"></i></span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Created a mural from recycled plastics for our Earth Day exhibit! It visualizes a world powered by wind energy.</p>
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="01.png" >
+                                <img src="555.png" >
+                                <img src="44.png" >
+                            </div>
+                            <button class="prev" data-slider="0">❮</button>
+                            <button class="next" data-slider="0">❯</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="profile-pic" style="background-image: url('forweb.JPG');"></div>
+                        <div class="post-meta">
+                            <h3>rassim baz</h3>
+                            <span>April 8 2025 <i class="globe-icon"></i></span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Designed a new logo for our sustainability campaign bold, green, and futuristic—feedback welcome!</p>
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="777.png">
+                                <img src="sm2.jpg">
+                                <img src="05.png">
+                            </div>
+                            <button class="prev" data-slider="1">❮</button>
+                            <button class="next" data-slider="1">❯</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="profile-pic" style="background-image: url('777.png');"></div>
+                        <div class="post-meta">
+                            <h3>wajih begg</h3>
+                            <span>April 1 2025 <i class="globe-icon"></i></span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Our team pitched a VR exhibit concept for a solar-powered city at the ideation challenge. Here are some mockups!</p>
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="forweb.JPG">
+                                <img src="03.png" >
+                                <img src="re.png" >
+                            </div>
+                            <button class="prev" data-slider="2">❮</button>
+                            <button class="next" data-slider="2">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="creativity(MM).js"></script>
+</body>
+</html>

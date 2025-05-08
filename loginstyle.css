@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(185deg, #137345, #8faa66);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #1c2526;
+}
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .login-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 1s ease forwards;
+  }
+  
+  
+
+  .login-form h2 {
+    color: #3d5a53; 
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .login-form h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #e4b509; 
+    border-radius: 2px;
+  }
+  
+  .input-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  input {
+    width: 88%;
+    padding:  12px 12px 12px 12px ; 
+    border: 2px solid #6b8e83;
+    border-radius: 8px;
+    background: #f7f9f7;
+    color: #2f4f4f;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  input:focus {
+    border-color: #e4b509;
+    box-shadow: 0 0 12px rgba(236, 212, 51, 0.829);
+    transform: scale(1.02);
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #6b8e83;
+    opacity: 0.7;
+  }
+  
+  button {
+    width: 100%;
+    background: #e4b509;
+    color: #3d5a53;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #e4b509;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Register Link  hadi lele hedra li9bal */
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #2f4f4f;
+    font-size: 0.9em;
+  }
+  /* Register Link  hadi lellink b3d */
+  .register-link a {
+    color: #e4b509;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .register-link a:hover {
+    color: #3d5a53;
+  }
+  /*hadi dir hadak l5ate li ymchi tht */
+  .register-link a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #3d5a53;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  .register-link a:hover::after {
+    width: 100%;
+  }
+  
+  /* Skip Link */
+  .yyy {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    background: #0f2258;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .yyy:hover {
+    background: #ffffff;
+    color: #0f2258;
+    transform: scale(0.8);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  

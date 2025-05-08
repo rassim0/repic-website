@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Club Events</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+    <nav class="sidebar">
+        <a href="chat2.0.html" class="nav-link">Chat</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="media(MM).html" class="nav-link">Media</a>
+        <a href="projects(MM).html" class="nav-link">Projects</a>
+        <a href="creativity(MM).html" class="nav-link">Creativity</a>
+        <a href="logout.html" class="nav-link">Logout</a>
+    </nav>
+    <div class="container">
+        <h1>MEDIA DEPARTMENT</h1>
+        <div class="post-form">
+            <h2>Add a new post</h2>
+            <form id="postForm" enctype="multipart/form-data">
+                <input type="text" name="memberName" placeholder="Your Name" required><br>
+                <br>
+                <textarea name="content" placeholder="What's on your mind ?" required width: 300px></textarea><br>
+                <br>
+                <input type="file" name="images" accept="image/*" multiple>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic" style="background-image: url('555.png');"></div>
+                    <div class="post-meta">
+                        <h3>moh kml</h3>
+                        <span>April 10 2025 <i class="globe-icon"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Join us for our Annual Tech Symposium! We'll showcase cutting-edge innovations and host expert talks on sustainable energy solutions.</p>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="01.png">
+                            <img src="09.png">
+                            <img src="re.png">
+                        </div>
+                        <button class="prev" data-slider="0">❮</button>
+                        <button class="next" data-slider="0">❯</button>
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button><i class="like-icon"></i> Like</button>
+                    <button><i class="comment-icon"></i> Comment</button>
+                    <button><i class="share-icon"></i> Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic" style="background-image: url('44.png');"></div>
+                    <div class="post-meta">
+                        <h3>moh  hh</h3>
+                        <span>April 5 2025 <i class="globe-icon"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Exciting Workshop Alert! Learn about renewable energy integration in our hands-on session this weekend. Limited spots, RSVP now!</p>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="forweb.JPG" >
+                            <img src="sm2.jpg" >
+                            <img src="45.png" >
+                        </div>
+                        <button class="prev" data-slider="1">❮</button>
+                        <button class="next" data-slider="1">❯</button>
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button><i class="like-icon"></i> Like</button>
+                    <button><i class="comment-icon"></i> Comment</button>
+                    <button><i class="share-icon"></i> Share</button>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic" style="background-image: url('01.png');"></div>
+                    <div class="post-meta">
+                        <h3>moh  klk</h3>
+                        <span>March 30 2025 <i class="globe-icon"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Our Community Outreach Program was a success! Thank you to all volunteers who helped spread awareness about clean energy solutions.</p>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="03.png">
+                            <img src="ens.jpg">
+                            <img src="ens.jpg">
+                        </div>
+                        <button class="prev" data-slider="2">❮</button>
+                        <button class="next" data-slider="2">❯</button>
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button><i class="like-icon"></i> Like</button>
+                    <button><i class="comment-icon"></i> Comment</button>
+                    <button><i class="share-icon"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="media(MM).js"></script>
+</body>
+</html>

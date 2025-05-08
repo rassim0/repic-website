@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-EPIC Club</title>
+    <link rel="stylesheet" href="events(css).css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" >HOME</a></li>
+                <li><a href="projects.html" >Projects</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" >login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Event Countdown Timer -->
+    <section id="countdown">
+        <h2>Event Countdown</h2>
+        <p>Next Event: Hackathon - 22th april 2025</p>
+        <div id="timer"> 52 days </div>
+    </section>
+
+    <!-- Event Highlights -->
+    <section id="highlights">
+        <h2>Events Highlights</h2>
+        <div class="event-item">
+            <img src="sm2.jpg">
+            <p>Highlights from our previous Hackathon. Great participation and intense competition!</p>
+        </div>
+        <div class="event-item">
+            <img src="forweb.JPG" >
+            <p>Webinar on Cybersecurity, featuring top experts in the industry.</p>
+        </div>
+    </section>
+
+    <!-- Event Registration -->
+    <section id="registration">
+        <h2>Register for Upcoming Events</h2>
+        <form action="register-event.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="event">Select Event:</label>
+            <select id="event" name="event">
+                <option value="hackathon">Hackathon 2025</option>
+                <option value="webinar">Cybersecurity Webinar</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Event Live Streams -->
+    <section id="live-streams">
+        <h2>Watch Live Streams</h2>
+        <p>Join our upcoming events live via the following links:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/live/hackathon" target="_blank">Hackathon Live Stream</a></li>
+            <li><a href="https://www.youtube.com/live/webinar" target="_blank">Cybersecurity Webinar</a></li>
+        </ul>
+    </section>
+
+    <!-- Event Photos and Videos Gallery -->
+    <section id="gallery">
+        <h2>Event Photos and Videos</h2>
+        <div class="gallery-item">
+            <img src="photo1.jpg" alt="Event Photo">
+            <video src="video1.mp4" controls></video>
+        </div>
+        <div class="gallery-item">
+            <img src="photo2.jpg" alt="Event Photo">
+            <video src="video2.mp4" controls></video>
+        </div>
+    </section>
+
+    <!-- Speaker/Panelist Bios -->
+    <section id="speakers">
+        <h2>Meet Our Speakers</h2>
+        <div class="speaker-item">
+            <img src="speaker1.jpg" alt="Speaker Photo">
+            <h3>John Doe</h3>
+            <p>Cybersecurity Expert with over 10 years of experience. Follow John on <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+        </div>
+        <div class="speaker-item">
+            <img src="speaker2.jpg" alt="Speaker Photo">
+            <h3>Jane Smith</h3>
+            <p>Founder of SecurityX, a leading cybersecurity company. Follow Jane on <a href="https://twitter.com/janesmith" target="_blank">Twitter</a></p>
+        </div>
+    </section>
+
+    <!-- Sponsor/Partner Section -->
+    <section id="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-item">
+            <img src="sponsor1-logo.png" alt="Sponsor Logo">
+            <a href="https://www.sponsor1.com" target="_blank">Visit Sponsor</a>
+        </div>
+        <div class="sponsor-item">
+            <img src="sponsor2-logo.png" alt="Sponsor Logo">
+            <a href="https://www.sponsor2.com" target="_blank">Visit Sponsor</a>
+        </div>
+    </section>
+
+    <!-- Event Reviews or Testimonials -->
+    <section id="testimonials">
+        <h2>What People Say</h2>
+        <blockquote>
+            "The hackathon was a great experience, learned so much and met awesome people!" - Alex
+        </blockquote>
+        <blockquote>
+            "The cybersecurity webinar was insightful, I gained valuable knowledge!" - Sarah
+        </blockquote>
+    </section>
+
+
+    <!-- Polls and Surveys -->
+    <section id="polls">
+        <h2>Poll: What Event Would You Like to See Next?</h2>
+        <form action="poll-response.php" method="POST">
+            <label>
+                <input type="radio" name="event-type" value="workshop"> Workshop
+            </label>
+            <label>
+                <input type="radio" name="event-type" value="hackathon"> Hackathon
+            </label>
+            <label>
+                <input type="radio" name="event-type" value="webinar"> Webinar
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>

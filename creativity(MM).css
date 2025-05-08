@@ -1,0 +1,255 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e6f0fa 0%, #f4f4f9 100%);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content-container {
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        padding-bottom: 70px; 
+    }
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #137345;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.post-form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-form h2 {
+    font-size: 1.6em;
+    color: #1c1e21;
+    margin: 0 0 15px;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 12px;
+}
+
+.post-form textarea {
+    height: 90px;
+}
+
+.post-form input[type="file"] {
+    margin-bottom: 12px;
+}
+
+.post-form button {
+    background: #e4b509;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.post-form button:hover {
+    background: #c99e08;
+}
+
+.post {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.post-meta h3 {
+    font-size: 1.2em;
+    color: #1c1e21;
+    margin: 0;
+}
+
+.post-meta span {
+    font-size: 0.85em;
+    color: #65676b;
+}
+
+.globe-icon::before {
+    content: '🌐';
+    margin-left: 5px;
+}
+
+.post-content p {
+    font-size: 1em;
+    color: #1c1e21;
+    margin: 12px 0;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 12px auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 320px;
+    object-fit: cover;
+    flex: 0 0 100%;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(19, 115, 69, 0.7);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1.6em;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 12px;
+}
+
+button.next {
+    right: 12px;
+}
+
+button:hover {
+    background: #137345;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background: #137345;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+.sidebar.hidden {
+    left: -100px;
+}
+
+.nav-link {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link:hover {
+    background: #e4b509;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #137345;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.toggle-btn:hover {
+    background: #e4b509;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        top: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 0;
+    }
+
+    .sidebar.hidden {
+        bottom: -60px;
+        left: 0;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .toggle-btn {
+        top: 10px;
+        left: 10px;
+    }
+}
